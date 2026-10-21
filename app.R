@@ -130,14 +130,8 @@
 
 # Datos reales - 8hts - USITC junio 26 -------------------------------------
 #12 países seleccionados
-#DATOS_USITC_BASE <- read_csv("InPutApp/data_panel_12_826.csv")
-#DATOS_USITC_TOTALES <- read_csv("InPutApp/datos_global_12_826.csv")
-# to start an in-memory database
-
-con <- dbConnect(duckdb())
-
-DATOS_USITC_BASE <- dbGetQuery(con, "SELECT * FROM 'InPutApp/data_panel_12_826.parquet';")
-DATOS_USITC_TOTALES <- dbGetQuery(con, "SELECT * FROM 'InPutApp/datos_global_12_826.parquet';")
+DATOS_USITC_BASE <- read_csv("InPutApp/data_panel_12_826.csv")
+DATOS_USITC_TOTALES <- read_csv("InPutApp/datos_global_12_826.csv")
 
 addResourcePath(prefix = "www", directoryPath = file.path(getwd(), "www"))
 
