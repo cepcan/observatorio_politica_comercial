@@ -1,12 +1,8 @@
-## APP para consultas de comercio con EE. UU. y dashboard ejecutivo
-## Versión 2.3 - local (Solución de detalles menores de visualización)
+## Observatorio de Importaciones y Política Comercial de EE.UU.
+## Versión 2.5 -  Añadir nuevas funciones solicitadas + solución HD barra de plotly
 ## Nota: tema de warning en el ggplot de las barras para programa (label)
 ## Autor: Sergio Iglesias - CEPCAN
-## Fecha: 30/09/2026
-
-##Agregar 2 secciones (Laboratorio de datos)
-# Comparativa de países 
-# Gráfica arancel + tasas y (línea del tiempo)
+## Fecha: 27/10/2026
 
 ## Nuestro data set por países cubre el 73.5% de la base de importaciones del USITC a 8 dígitos (2026) 
 ## 8471 (92.3%)
@@ -128,7 +124,7 @@
 
 ## Actualización 2: Milo está liderando esta parte
 
-# Datos reales - 8hts - USITC junio 26 -------------------------------------
+# Datos reales - 8hts - USITC agosto 26 -------------------------------------
 #12 países seleccionados
 DATOS_USITC_BASE <- read_csv("InPutApp/data_panel_12_826.csv")
 DATOS_USITC_TOTALES <- read_csv("InPutApp/datos_global_12_826.csv")
