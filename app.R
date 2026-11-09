@@ -2,7 +2,7 @@
 ## Versión 2.5 -  Añadir nuevas funciones solicitadas + solución HD barra de plotly
 ## Nota: tema de warning en el ggplot de las barras para programa (label)
 ## Autor: Sergio Iglesias - CEPCAN
-## Fecha: 27/10/2026
+## Fecha: 09/11/2026
 
 ## Nuestro data set por países cubre el 73.5% de la base de importaciones del USITC a 8 dígitos (2026) 
 ## 8471 (92.3%)
@@ -124,10 +124,10 @@
 
 ## Actualización 2: Milo está liderando esta parte
 
-# Datos reales - 8hts - USITC agosto 26 -------------------------------------
-#12 países seleccionados
-DATOS_USITC_BASE <- read_csv("InPutApp/data_panel_12_826.csv")
-DATOS_USITC_TOTALES <- read_csv("InPutApp/datos_global_12_826.csv")
+# Datos reales - 8hts - USITC septiembre 26 -------------------------------------
+#18 países seleccionados
+DATOS_USITC_BASE <- read_csv("InPutApp/data_panel_18_926.csv")
+DATOS_USITC_TOTALES <- read_csv("InPutApp/datos_global_18_926.csv")
 
 addResourcePath(prefix = "www", directoryPath = file.path(getwd(), "www"))
 
@@ -142,16 +142,13 @@ paleta_programas <- c(
   "T-MEC" = "#2ca02c",
   "URC on Chemicals" = "#ffa600",
   "USJTA" = "darkblue",
-  "KORUS FTA" = "#123160" 
-)
-
-# Contraseñas temporales de acceso ----------------------------------------
-#credentials <- data.frame(
- # user = c("admincepcan", "economia_guest_2026", "jorgecepcan"),
-  #password = c("cepcanecsg26", "se20mxg26", "cepjc26mtyg"),
-  #is_admin = TRUE, FALSE, FALSE,
-  #stringsAsFactors = FALSE
-#)
+  "KORUS FTA" = "#123160",
+  "CHILE FTA" = "cyan4",        
+  "COLOMBIA FTA" = "cyan4",
+  "CAFTA-DR+" = "#2ca02c",
+  "CAFTA-DR"  = "cyan4",               
+  "PERU FTA" = "cyan4"         
+) 
 
 # UI ----------------------------------------------------------------------
 ui <- dashboardPage(
