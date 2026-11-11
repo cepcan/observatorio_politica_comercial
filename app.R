@@ -1334,7 +1334,7 @@ server <- function(input, output, session) {
               titulo_txt, "<br>",
               "<span style='font-size: 16px; color: #333333; font-family: Roboto;'><b>Valor Total de Importaciones: $", total_txt, " M USD</b></span><br>",
               "<span style='color: #666666; font-size: 14px; font-family: Roboto;'>",
-              '<b>Nota: Los países mostrados son los principales dentro de la muestra (12 países). "Resto del mundo" ajusta al total real, por lo que los porcentajes de participación son exactos.</b>',
+              '<b>Nota: Los países mostrados son los principales dentro de la muestra (18 países). "Resto del mundo" ajusta al total real, por lo que los porcentajes de participación son exactos.</b>',
               "</span>"
             ),
           x = 0.01, xanchor = "left", xref = "container",
